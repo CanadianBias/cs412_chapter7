@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    width: 100%; /* Ensures header spans full width */
+    position: relative; /* Allows for proper positioning */
+}
+
+main {
+    padding-left: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.search-section, .dropdown-section, .result-section, .bookmark-section {
+    margin: 20px 0;
+}
+
+.search-section input, .dropdown-section select {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result-section {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#verse-output {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bookmark-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bookmark-section li {
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    width: 100%; /* Ensures footer spans full width */
+    position: relative; /* Keeps footer at the bottom */
+    bottom: 0;
+}
+
+.dropdown-section label {
+    display: block;
+    margin-top: 10px;
+}
+
+.dropdown-section select {
+    margin-bottom: 10px;
+}
+

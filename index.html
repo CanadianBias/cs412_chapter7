@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bible Study</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Bible Study</h1>
+        </header>
+
+        <main>
+            <!-- Search Bar Section -->
+            <section class="search-section">
+                <h2>Search Bible Verses by Text</h2>
+                <input type="text" id="verse-input" placeholder="e.g., John 3:16">
+                <button id="search-button">Search</button>
+            </section>
+
+            <!-- Dropdown Section for Book, Chapter, and Verse -->
+            <section class="dropdown-section">
+                <h2>Select Bible Verses by Book, Chapter, and Verse</h2>
+                
+                <!-- Add these to your existing HTML structure -->
+                <select id="book-dropdown">
+                    <option value="">Select Book</option>
+                </select>
+
+                <select id="chapter-dropdown" disabled>
+                    <option value="">Select Chapter</option>
+                </select>
+
+                <select id="verse-dropdown" disabled>
+                    <option value="">Select Verse</option>
+                </select>
+
+                <button id="dropdown-search-button">Search</button>
+            </section>
+
+            <!-- Result Section -->
+            <section class="result-section">
+                <h3>Verse:</h3>
+                <div id="verse-output"></div>
+            </section>
+
+            <!-- Bookmark Section -->
+            <section class="bookmark-section">
+                <h2>Bookmarked Verses</h2>
+                <ul id="bookmark-list"></ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by Bible-API</p>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
